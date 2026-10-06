@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Kaya Furniture | Kitchens, Beds, Wardrobes, TV Units & More</title>
 <meta name="description" content="Kaya Furniture makes custom kitchens, beds, wardrobes, TV racks, center tables, vanity units and office furniture.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css"></head><body>
-<nav><div class="wrap"><a class="logo" href="#top">Kaya<i> Furniture</i></a>
-<ul><li><a href="#categories">Categories</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
-<a class="btn" href="#contact">Get a quote</a></div></nav>
+<nav id="nav"><div class="wrap"><a class="logo" href="#top">Kaya<i> Furniture</i></a>
+<ul id="links"><li><a href="#categories">Categories</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li><li class="mq"><a href="#contact">Get a quote</a></li></ul>
+<a class="btn nq" href="#contact">Get a quote</a><button class="menu" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span><span></span></button></div></nav>
 <header class="hero" id="top"><div class="wrap">
 <div><h1>Furniture made for the way your home lives.</h1>
 <p>Modular kitchens, beds, wardrobes, TV units and more. Designed with you, built in solid finishes, and fitted to your room.</p>
@@ -32,7 +32,7 @@
 <script>
 const PHONE="919608151135"; /* WhatsApp number with country code */
 const CATS={kitchen:"Kitchen",bed:"Beds","center":"Center tables",home:"Home furniture",office:"Office furniture",tv:"TV racks",vanity:"Vanity tables",wardrobe:"Wardrobes"};
-const D=[["kitchen-000.jpg", "kitchen"], ["kitchen-001.jpg", "kitchen"], ["kitchen-002.jpg", "kitchen"], ["kitchen-003.jpg", "kitchen"], ["kitchen-004.jpg", "kitchen"], ["kitchen-005.jpg", "kitchen"], ["kitchen-006.jpg", "kitchen"], ["kitchen-007.jpg", "kitchen"], ["kitchen-008.jpg", "kitchen"], ["kitchen-009.jpg", "kitchen"], ["kitchen-010.jpg", "kitchen"], ["kitchen-012.jpg", "kitchen"], ["kitchen-013.jpg", "kitchen"], ["bed-014.jpg", "bed"], ["bed-015.jpg", "bed"], ["bed-016.jpg", "bed"], ["bed-017.jpg", "bed"], ["bed-018.jpg", "bed"], ["bed-019.jpg", "bed"], ["bed-020.jpg", "bed"], ["bed-021.jpg", "bed"], ["bed-022.jpg", "bed"], ["bed-023.jpg", "bed"], ["bed-024.jpg", "bed"], ["bed-025.jpg", "bed"], ["bed-026.jpg", "bed"], ["bed-027.jpg", "bed"], ["bed-028.jpg", "bed"], ["bed-030.jpg", "bed"], ["bed-065.jpg", "bed"], ["bed-029.jpg", "bed"], ["center-031.jpg", "center"], ["center-032.jpg", "center"], ["center-033.jpg", "center"], ["center-034.jpg", "center"], ["center-035.jpg", "center"], ["center-036.jpg", "center"], ["center-037.jpg", "center"], ["center-038.jpg", "center"], ["center-039.jpg", "center"], ["center-040.jpg", "center"], ["center-041.jpg", "center"], ["center-042.jpg", "center"], ["center-043.jpg", "center"], ["center-044.jpg", "center"], ["center-045.jpg", "center"], ["center-046.jpg", "center"], ["center-047.jpg", "center"], ["center-052.jpg", "center"], ["center-056.jpg", "center"], ["center-060.jpg", "center"], ["center-064.jpg", "center"], ["center-073.jpg", "center"], ["center-075.jpg", "center"], ["home-049.jpg", "home"], ["home-051.jpg", "home"], ["home-053.jpg", "home"], ["home-054.jpg", "home"], ["home-057.jpg", "home"], ["home-058.jpg", "home"], ["home-059.jpg", "home"], ["home-061.jpg", "home"], ["home-068.jpg", "home"], ["home-069.jpg", "home"], ["home-072.jpg", "home"], ["home-074.jpg", "home"], ["office-076.jpg", "office"], ["office-077.jpg", "office"], ["office-078.jpg", "office"], ["office-079.jpg", "office"], ["office-080.jpg", "office"], ["office-081.jpg", "office"], ["office-082.jpg", "office"], ["office-083.jpg", "office"], ["office-084.jpg", "office"], ["office-085.jpg", "office"], ["tv-050.jpg", "tv"], ["tv-062.jpg", "tv"], ["tv-063.jpg", "tv"], ["tv-071.jpg", "tv"], ["tv-086.jpg", "tv"], ["tv-087.jpg", "tv"], ["tv-088.jpg", "tv"], ["tv-089.jpg", "tv"], ["tv-090.jpg", "tv"], ["tv-091.jpg", "tv"], ["tv-092.jpg", "tv"], ["tv-093.jpg", "tv"], ["tv-094.jpg", "tv"], ["tv-095.jpg", "tv"], ["tv-096.jpg", "tv"], ["tv-097.jpg", "tv"], ["tv-098.jpg", "tv"], ["tv-099.jpg", "tv"], ["vanity-066.jpg", "vanity"], ["vanity-067.jpg", "vanity"], ["vanity-070.jpg", "vanity"], ["wardrobe-055.jpg", "wardrobe"], ["wardrobe-048.jpg", "wardrobe"], ["wardrobe-066.jpg", "wardrobe"], ["wardrobe-067.jpg", "wardrobe"], ["wardrobe-070.jpg", "wardrobe"]];
+const D=[["kitchen-000.jpg","kitchen",1.501],["kitchen-001.jpg","kitchen",1.778],["kitchen-002.jpg","kitchen",1.501],["kitchen-003.jpg","kitchen",1.461],["kitchen-004.jpg","kitchen",1.499],["kitchen-005.jpg","kitchen",0.666],["kitchen-006.jpg","kitchen",1.501],["kitchen-007.jpg","kitchen",1.299],["kitchen-008.jpg","kitchen",1.777],["kitchen-009.jpg","kitchen",1.333],["kitchen-010.jpg","kitchen",2.222],["kitchen-012.jpg","kitchen",1.0],["kitchen-013.jpg","kitchen",1.333],["bed-014.jpg","bed",1.185],["bed-015.jpg","bed",1.0],["bed-016.jpg","bed",1.777],["bed-017.jpg","bed",1.749],["bed-018.jpg","bed",1.333],["bed-019.jpg","bed",0.562],["bed-020.jpg","bed",1.193],["bed-021.jpg","bed",1.333],["bed-022.jpg","bed",2.048],["bed-023.jpg","bed",1.034],["bed-024.jpg","bed",1.777],["bed-025.jpg","bed",1.501],["bed-026.jpg","bed",1.78],["bed-027.jpg","bed",1.042],["bed-028.jpg","bed",1.501],["bed-030.jpg","bed",1.0],["bed-065.jpg","bed",1.25],["bed-029.jpg","bed",1.0],["center-031.jpg","center",1.25],["center-032.jpg","center",0.722],["center-033.jpg","center",0.669],["center-034.jpg","center",1.0],["center-035.jpg","center",1.049],["center-036.jpg","center",1.0],["center-037.jpg","center",1.501],["center-038.jpg","center",1.0],["center-039.jpg","center",1.0],["center-040.jpg","center",1.0],["center-041.jpg","center",1.25],["center-042.jpg","center",1.0],["center-043.jpg","center",1.25],["center-044.jpg","center",1.333],["center-045.jpg","center",1.0],["center-046.jpg","center",0.667],["center-047.jpg","center",1.0],["center-052.jpg","center",1.25],["center-056.jpg","center",1.0],["center-060.jpg","center",1.0],["center-064.jpg","center",1.501],["center-073.jpg","center",1.0],["center-075.jpg","center",1.149],["home-049.jpg","home",1.777],["home-051.jpg","home",1.0],["home-053.jpg","home",1.499],["home-054.jpg","home",1.735],["home-057.jpg","home",1.501],["home-058.jpg","home",1.777],["home-059.jpg","home",1.588],["home-061.jpg","home",1.501],["home-068.jpg","home",1.5],["home-069.jpg","home",1.287],["home-072.jpg","home",1.352],["home-074.jpg","home",1.25],["office-076.jpg","office",1.777],["office-077.jpg","office",1.0],["office-078.jpg","office",1.492],["office-079.jpg","office",1.0],["office-080.jpg","office",0.734],["office-081.jpg","office",1.0],["office-082.jpg","office",1.501],["office-083.jpg","office",1.364],["office-084.jpg","office",1.502],["office-085.jpg","office",1.0],["tv-050.jpg","tv",1.501],["tv-062.jpg","tv",1.501],["tv-063.jpg","tv",1.783],["tv-071.jpg","tv",1.333],["tv-086.jpg","tv",1.0],["tv-087.jpg","tv",1.501],["tv-088.jpg","tv",0.667],["tv-089.jpg","tv",1.501],["tv-090.jpg","tv",1.0],["tv-091.jpg","tv",1.777],["tv-092.jpg","tv",0.886],["tv-093.jpg","tv",1.392],["tv-094.jpg","tv",1.162],["tv-095.jpg","tv",1.25],["tv-096.jpg","tv",1.489],["tv-097.jpg","tv",1.171],["tv-098.jpg","tv",1.783],["tv-099.jpg","tv",1.333],["vanity-066.jpg","vanity",1.0],["vanity-067.jpg","vanity",1.205],["vanity-070.jpg","vanity",1.25],["wardrobe-055.jpg","wardrobe",1.777],["wardrobe-048.jpg","wardrobe",1.433],["wardrobe-066.jpg","wardrobe",1.0],["wardrobe-067.jpg","wardrobe",1.205],["wardrobe-070.jpg","wardrobe",1.25]];
 const $=s=>document.querySelector(s),cnt=k=>D.filter(d=>d[1]==k).length;
 let cur="all",list=[],at=0;
 const tiles=$("#tiles"),chips=$("#chips"),grid=$("#grid"),sel=$("#c");
@@ -43,9 +43,15 @@ Object.entries(CATS).forEach(([k,v])=>{
 sel.insertAdjacentHTML("beforeend","<option>Something else</option>");
 function chip(k,t){chips.insertAdjacentHTML("beforeend",`<button class="chip" data-k="${k}" aria-pressed="${k==cur}">${t}</button>`)}
 chip("all","All");Object.entries(CATS).forEach(([k,v])=>chip(k,v));
+function nCols(){return innerWidth<600?2:innerWidth>=1500?4:3}
+let lastN=0;
 function show(k){cur=k;chips.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c.dataset.k==k));
- list=D.filter(d=>k=="all"||d[1]==k);
- grid.innerHTML=list.map((d,i)=>`<button data-i="${i}" aria-label="View ${CATS[d[1]]} photo"><img loading="lazy" src="images/${d[0]}" alt="${CATS[d[1]]} by Kaya Furniture"><em>${CATS[d[1]]}</em></button>`).join("")}
+ list=D.filter(d=>k=="all"?d[1]!="vanity":d[1]==k);
+ const N=lastN=nCols(),hs=Array(N).fill(0),cs=Array(N).fill("");
+ list.forEach((d,i)=>{const j=hs.indexOf(Math.min(...hs));hs[j]+=d[2];
+  cs[j]+=`<button data-i="${i}" aria-label="View ${CATS[d[1]]} photo"><img loading="lazy" width="100" height="${Math.round(d[2]*100)}" src="images/${d[0]}" alt="${CATS[d[1]]} by Kaya Furniture"><em>${CATS[d[1]]}</em></button>`});
+ grid.innerHTML=cs.map(x=>`<div class="col">${x}</div>`).join("")}
+let rt;addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(()=>{if(nCols()!=lastN)show(cur)},150)});
 chips.onclick=e=>{const c=e.target.closest(".chip");c&&show(c.dataset.k)};
 tiles.onclick=e=>{const t=e.target.closest(".tile");if(t){show(t.dataset.k);$("#gallery").scrollIntoView()}};
 const lb=$("#lb"),li=lb.querySelector("img"),lp=lb.querySelector("p");
@@ -56,5 +62,13 @@ addEventListener("keydown",e=>{if(!lb.classList.contains("on"))return;if(e.key==
 const wa=t=>"https://wa.me/"+PHONE+"?text="+encodeURIComponent(t);
 $("#wa").href=wa("Hi Kaya Furniture, I'd like to know more about your furniture.");
 $("#f").onsubmit=e=>{e.preventDefault();open_=wa(`Hi Kaya Furniture, I'm ${$("#n").value}. I'm looking for: ${sel.value}. ${$("#m").value}`);window.open(open_,"_blank")};
+
+const nav=$("#nav"),mb=$("#menu");
+function setMenu(o){nav.classList.toggle("open",o);mb.setAttribute("aria-expanded",o);mb.setAttribute("aria-label",o?"Close menu":"Open menu")}
+mb.onclick=()=>setMenu(!nav.classList.contains("open"));
+$("#links").onclick=e=>{if(e.target.closest("a"))setMenu(false)};
+addEventListener("resize",()=>{if(innerWidth>860)setMenu(false)});
+let sx=0;lb.addEventListener("touchstart",e=>{sx=e.touches[0].clientX},{passive:true});
+lb.addEventListener("touchend",e=>{const d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)open(at+(d<0?1:-1))});
 $("#y").textContent=new Date().getFullYear();show("all");
 </script></body></html>

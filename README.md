@@ -8,7 +8,7 @@ A simple, fast, mobile-friendly website for **Kaya Furniture**. It shows 99 furn
 - 8 categories: Kitchen, Beds, Center tables, Home furniture, Office furniture, TV racks, Vanity tables, Wardrobes
 - Full-screen photo viewer (click a photo; use the arrow keys or on-screen buttons; press Esc to close)
 - Floating **WhatsApp us** button and an enquiry form that opens WhatsApp with the customer's message pre-filled
-- Works on phones, tablets and desktops
+- Fully responsive: phone menu (hamburger), 2-column gallery on phones, swipe left/right in the photo viewer, safe-area support for notched phones, and wider layouts on large screens
 - Plain HTML, CSS and JavaScript. No build step, no frameworks
 
 ## Folder structure
