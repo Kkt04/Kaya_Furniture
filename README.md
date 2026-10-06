@@ -37,7 +37,7 @@ Open `index.html` and update:
 | --- | --- |
 | WhatsApp number | `const PHONE="+91 7903702075";` near the bottom (country code first, no `+` or spaces) |
 | Number shown on the page | The "Phone / WhatsApp" block in the Contact section (also update the `wa.me` link there) |
-| Instagram link | `const IG_URL="https://www.instagram.com/";` near the bottom (this is the Instagram icon in the footer) |
+| Instagram link | `const IG_URL="https://www.instagram.com/kayafurniture_07?stkn=ZGtta2plYW00ZTJs";` near the bottom (this is the Instagram icon in the footer) |
 | Showroom address | The "Showroom" block in the Contact section |
 | Opening hours | The "Hours" block in the Contact section |
 
