@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kaya Furniture | Kitchens, Beds, Wardrobes, TV Units & More</title>
+<meta name="description" content="Kaya Furniture makes custom kitchens, beds, wardrobes, TV racks, center tables, vanity units and office furniture.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<nav><div class="wrap"><a class="logo" href="#top">Kaya<i> Furniture</i></a>
+<ul><li><a href="#categories">Categories</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="btn" href="#contact">Get a quote</a></div></nav>
+<header class="hero" id="top"><div class="wrap">
+<div><h1>Furniture made for the way your home lives.</h1>
+<p>Modular kitchens, beds, wardrobes, TV units and more. Designed with you, built in solid finishes, and fitted to your room.</p>
+<div class="row"><a class="btn" href="#gallery">See our work</a><a class="btn alt" href="#contact">Talk to us</a></div></div>
+<div class="collage"><img class="a" src="images/bed-018.jpg" alt="Upholstered bed with side tables"><img class="b" src="images/kitchen-012.jpg" alt="Blue modular kitchen"><img class="c" src="images/tv-094.jpg" alt="Marble finish TV unit"></div>
+</div>
+<div class="facts"><div class="wrap"><span>Custom sizes</span><span>Free design consultation</span><span>Delivery and fitting included</span><span>Quality checked finish</span></div></div></header>
+<section id="categories"><div class="wrap"><h2>Shop by room</h2><p class="lead">Eight collections, from the kitchen to the office. Pick one to browse the designs.</p><div class="tiles" id="tiles"></div></div></section>
+<section id="gallery" style="padding-top:0"><div class="wrap"><h2>Our designs</h2><p class="lead">Tap any photo to view it larger. Like something? Send us the photo and we'll make it in your size.</p>
+<div class="chips" id="chips" role="group" aria-label="Filter by category"></div><div class="grid" id="grid"></div></div></section>
+<section class="about" id="about"><div class="wrap"><div><h2>Built around your space, not a catalogue.</h2>
+<p>Every home has its own measurements, light and habits. We start with those, then choose the layout, material and finish that fit.</p><p>You approve the design before we cut a single board.</p></div>
+<ul><li><b>Made to measure</b><span>Every piece is cut to your room's exact size.</span></li><li><b>Honest materials</b><span>Wood, laminate and acrylic finishes you can see and feel before you decide.</span></li><li><b>One team, start to finish</b><span>Design, making, delivery and fitting handled by us.</span></li></ul></div></section>
+<section class="contact" id="contact"><div class="wrap">
+<div class="info"><h2>Tell us what you need.</h2><p class="lead">Share the room, the piece and a rough budget. We'll reply on WhatsApp with ideas and a quote.</p>
+<p><b>Phone / WhatsApp</b><br><a href="https://wa.me/919608151135" target="_blank" rel="noopener">+91 9608151135</a></p><p><b>Showroom</b><br>2nd Phase, Industrial Area, 27 B, near Fairdeal Hyundai Body Shop, Adityapur Industrial Area, Adityapur, Jamshedpur, Jharkhand 832109</p><p><b>Hours</b><br>Mon to Sat, 10 am to 7 pm</p></div>
+<form id="f"><div><label for="n">Your name</label><input id="n" required></div><div><label for="c">What are you looking for?</label><select id="c"></select></div><div><label for="m">Details</label><textarea id="m" rows="4" placeholder="Room size, material, budget, anything else"></textarea></div><button class="btn" type="submit">Send on WhatsApp</button></form></div></section>
+<footer><div class="wrap">&copy; <span id="y"></span> Kaya Furniture. All rights reserved.</div></footer>
+<a class="wa" id="wa" href="#">WhatsApp us</a>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer"><button class="x" aria-label="Close">&times;</button><button class="p" aria-label="Previous">&#8249;</button><img alt=""><button class="n" aria-label="Next">&#8250;</button><p></p></div>
+<script>
+const PHONE="919608151135"; /* WhatsApp number with country code */
+const CATS={kitchen:"Kitchen",bed:"Beds","center":"Center tables",home:"Home furniture",office:"Office furniture",tv:"TV racks",vanity:"Vanity tables",wardrobe:"Wardrobes"};
+const D=[["kitchen-000.jpg", "kitchen"], ["kitchen-001.jpg", "kitchen"], ["kitchen-002.jpg", "kitchen"], ["kitchen-003.jpg", "kitchen"], ["kitchen-004.jpg", "kitchen"], ["kitchen-005.jpg", "kitchen"], ["kitchen-006.jpg", "kitchen"], ["kitchen-007.jpg", "kitchen"], ["kitchen-008.jpg", "kitchen"], ["kitchen-009.jpg", "kitchen"], ["kitchen-010.jpg", "kitchen"], ["kitchen-012.jpg", "kitchen"], ["kitchen-013.jpg", "kitchen"], ["bed-014.jpg", "bed"], ["bed-015.jpg", "bed"], ["bed-016.jpg", "bed"], ["bed-017.jpg", "bed"], ["bed-018.jpg", "bed"], ["bed-019.jpg", "bed"], ["bed-020.jpg", "bed"], ["bed-021.jpg", "bed"], ["bed-022.jpg", "bed"], ["bed-023.jpg", "bed"], ["bed-024.jpg", "bed"], ["bed-025.jpg", "bed"], ["bed-026.jpg", "bed"], ["bed-027.jpg", "bed"], ["bed-028.jpg", "bed"], ["bed-030.jpg", "bed"], ["bed-065.jpg", "bed"], ["bed-029.jpg", "bed"], ["center-031.jpg", "center"], ["center-032.jpg", "center"], ["center-033.jpg", "center"], ["center-034.jpg", "center"], ["center-035.jpg", "center"], ["center-036.jpg", "center"], ["center-037.jpg", "center"], ["center-038.jpg", "center"], ["center-039.jpg", "center"], ["center-040.jpg", "center"], ["center-041.jpg", "center"], ["center-042.jpg", "center"], ["center-043.jpg", "center"], ["center-044.jpg", "center"], ["center-045.jpg", "center"], ["center-046.jpg", "center"], ["center-047.jpg", "center"], ["center-052.jpg", "center"], ["center-056.jpg", "center"], ["center-060.jpg", "center"], ["center-064.jpg", "center"], ["center-073.jpg", "center"], ["center-075.jpg", "center"], ["home-049.jpg", "home"], ["home-051.jpg", "home"], ["home-053.jpg", "home"], ["home-054.jpg", "home"], ["home-057.jpg", "home"], ["home-058.jpg", "home"], ["home-059.jpg", "home"], ["home-061.jpg", "home"], ["home-068.jpg", "home"], ["home-069.jpg", "home"], ["home-072.jpg", "home"], ["home-074.jpg", "home"], ["office-076.jpg", "office"], ["office-077.jpg", "office"], ["office-078.jpg", "office"], ["office-079.jpg", "office"], ["office-080.jpg", "office"], ["office-081.jpg", "office"], ["office-082.jpg", "office"], ["office-083.jpg", "office"], ["office-084.jpg", "office"], ["office-085.jpg", "office"], ["tv-050.jpg", "tv"], ["tv-062.jpg", "tv"], ["tv-063.jpg", "tv"], ["tv-071.jpg", "tv"], ["tv-086.jpg", "tv"], ["tv-087.jpg", "tv"], ["tv-088.jpg", "tv"], ["tv-089.jpg", "tv"], ["tv-090.jpg", "tv"], ["tv-091.jpg", "tv"], ["tv-092.jpg", "tv"], ["tv-093.jpg", "tv"], ["tv-094.jpg", "tv"], ["tv-095.jpg", "tv"], ["tv-096.jpg", "tv"], ["tv-097.jpg", "tv"], ["tv-098.jpg", "tv"], ["tv-099.jpg", "tv"], ["vanity-066.jpg", "vanity"], ["vanity-067.jpg", "vanity"], ["vanity-070.jpg", "vanity"], ["wardrobe-055.jpg", "wardrobe"], ["wardrobe-048.jpg", "wardrobe"], ["wardrobe-066.jpg", "wardrobe"], ["wardrobe-067.jpg", "wardrobe"], ["wardrobe-070.jpg", "wardrobe"]];
+const $=s=>document.querySelector(s),cnt=k=>D.filter(d=>d[1]==k).length;
+let cur="all",list=[],at=0;
+const tiles=$("#tiles"),chips=$("#chips"),grid=$("#grid"),sel=$("#c");
+Object.entries(CATS).forEach(([k,v])=>{
+ const f=D.find(d=>d[1]==k)[0];
+ tiles.insertAdjacentHTML("beforeend",`<button class="tile" data-k="${k}"><img loading="lazy" src="images/${f}" alt="${v}"><span>${v}<small>${cnt(k)} designs</small></span></button>`);
+ sel.insertAdjacentHTML("beforeend",`<option>${v}</option>`)});
+sel.insertAdjacentHTML("beforeend","<option>Something else</option>");
+function chip(k,t){chips.insertAdjacentHTML("beforeend",`<button class="chip" data-k="${k}" aria-pressed="${k==cur}">${t}</button>`)}
+chip("all","All");Object.entries(CATS).forEach(([k,v])=>chip(k,v));
+function show(k){cur=k;chips.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c.dataset.k==k));
+ list=D.filter(d=>k=="all"||d[1]==k);
+ grid.innerHTML=list.map((d,i)=>`<button data-i="${i}" aria-label="View ${CATS[d[1]]} photo"><img loading="lazy" src="images/${d[0]}" alt="${CATS[d[1]]} by Kaya Furniture"><em>${CATS[d[1]]}</em></button>`).join("")}
+chips.onclick=e=>{const c=e.target.closest(".chip");c&&show(c.dataset.k)};
+tiles.onclick=e=>{const t=e.target.closest(".tile");if(t){show(t.dataset.k);$("#gallery").scrollIntoView()}};
+const lb=$("#lb"),li=lb.querySelector("img"),lp=lb.querySelector("p");
+function open(i){at=(i+list.length)%list.length;const d=list[at];li.src="images/"+d[0];lp.textContent=CATS[d[1]]+"  ("+(at+1)+"/"+list.length+")";lb.classList.add("on")}
+grid.onclick=e=>{const b=e.target.closest("button");b&&open(+b.dataset.i)};
+lb.onclick=e=>{const c=e.target.className;if(c=="x"||e.target==lb)lb.classList.remove("on");if(c=="p")open(at-1);if(c=="n")open(at+1)};
+addEventListener("keydown",e=>{if(!lb.classList.contains("on"))return;if(e.key=="Escape")lb.classList.remove("on");if(e.key=="ArrowLeft")open(at-1);if(e.key=="ArrowRight")open(at+1)});
+const wa=t=>"https://wa.me/"+PHONE+"?text="+encodeURIComponent(t);
+$("#wa").href=wa("Hi Kaya Furniture, I'd like to know more about your furniture.");
+$("#f").onsubmit=e=>{e.preventDefault();open_=wa(`Hi Kaya Furniture, I'm ${$("#n").value}. I'm looking for: ${sel.value}. ${$("#m").value}`);window.open(open_,"_blank")};
+$("#y").textContent=new Date().getFullYear();show("all");
+</script></body></html>
